@@ -1,0 +1,50 @@
+@media (max-width: 600px){
+    .nav{
+        position: fixed;
+        height: 145px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        padding: 0 150px;
+        font-size: 1.1vw;
+        font-weight: 50;
+        background-color: blueviolet;
+        z-index: 100;
+    }
+    .nav a{
+        display: none;
+    }
+
+    .nav #menu{
+        display: initial;
+    }
+
+    .page1 h1{
+        font-size: 1vw;
+    }
+
+    .many-more-div{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .about img{
+        width: 30px;
+    }
+
+    .about{
+        min-height: 40vh;
+        position: relative;
+        padding: 0 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        z-index: 10;
+    }
+}

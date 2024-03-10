@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background: linear-gradient(to left bottom, green, #95C11E);
+}
+
+body::-webkit-scrollbar-thumb{
+    display: block;
+    background: linear-gradient(to top, rgba(157, 186, 151, 0.247), white, #96c11e3c);
+    border-radius: 80px;
+}
+
+.nav{
+    position: fixed;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 150px;
+    font-size: 1.1vw;
+    font-weight: 50;
+    z-index: 100;
+}
+
+.nav img{
+    height: 90px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+.nav button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #95C11E;
+    position: fixed;
+    z-index: 100;
+    transition: linear;
+}
+
+.cursor-blur{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #96c11e2b;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+
+.page1 h1{
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+}
+
+.card-container{
+    height: 60vh;
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 45%;
+    width: 20%;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 7%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1{
+    background-image: url("../images/GitHubLogo-render.png");
+}
+
+#card2{
+    background-image: url("../images/instagram.jpg");
+}
+
+#card3{
+    background-image: url("../images/facebook.jpg");
+}
+
+#card4{
+    background-image: url("../images/linkedin.jpg");
+}
+
+#card5{
+    background-image: url("../images/telephone.jpeg");
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+    background-color: #95C11E;
+    padding: 20px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.social-button{
+    height: 15px;
+    width: 94px;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 40px;
+    transition: all ease 0.3s;
+}
+
+.social-button:hover{
+    scale: 1.2;
+    text-decoration: underline;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(1,0,1,-10deg) scale(1.2);
+}
+
+.overlay h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.overlay p{
+    color: black;
+}

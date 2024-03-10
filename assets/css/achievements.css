@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background: linear-gradient(to left bottom, green, #95C11E);
+}
+
+body::-webkit-scrollbar-thumb{
+    display: block;
+    background: linear-gradient(to top, rgba(157, 186, 151, 0.247), white, #96c11e3c);
+    border-radius: 80px;
+}
+
+.nav{
+    position: fixed;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 150px;
+    font-size: 1.1vw;
+    font-weight: 50;
+    z-index: 100;
+}
+
+.nav img{
+    height: 90px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+.nav button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #95C11E;
+    position: fixed;
+    z-index: 100;
+    transition: linear;
+}
+
+.cursor-blur{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #96c11e2b;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.591);
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+.page1 .left{
+    width: 70%;
+}
+
+.page1 .left h1{
+    font-size: 6vw;
+    font-weight: 900;
+}
+
+.page1 .left p{
+    font-size: 1.5vw;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.page2 h1{
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}
+
+.page2 .grid-container{
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px
+}
+
+.box{
+    grid-column: span 2;
+}
+
+.box p{
+    margin-top: 50px;
+}
+
+.inner-box1,.inner-box2,.inner-box3,.inner-box4{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    transition: all ease 0.5s;
+}
+
+.inner-box1:hover{
+    background: linear-gradient(to left bottom, green, #95C11E);
+    transform: scale(0.9);
+    border-radius: 20px;
+}
+
+.inner-box2:hover{
+    background: linear-gradient(to left bottom, green, #95C11E);
+    transform: scale(0.9);
+    border-radius: 20px;
+}
+
+.inner-box3:hover{
+    background: linear-gradient(to left bottom, green, #95C11E);
+    transform: scale(0.9);
+    border-radius: 20px;
+}
+
+.inner-box4:hover{
+    background: linear-gradient(to left bottom, green, #95C11E);
+    transform: scale(0.9);
+    border-radius: 20px;
+}
+
+.page2 h4{
+    position: absolute;
+    right: 20px;
+    font-size: 1.2vw;
+    transition: all ease 0.5s;
+}
+
+.page2 h4:hover{
+    scale: 0.9;
+    color: #95C11E;
+    text-decoration: underline;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 10;
+}
+
+.page3 h1{
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}
+
+.block{
+    margin-top: 30px;
+    width: 80%;
+}
+
+.block h4{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 10;
+}
+
+.page4 h1{
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}

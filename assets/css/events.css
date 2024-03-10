@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background: linear-gradient(to left bottom, green, #95C11E);
+}
+
+body::-webkit-scrollbar-thumb{
+    display: block;
+    background: linear-gradient(to top, rgba(157, 186, 151, 0.247), white, #96c11e3c);
+    border-radius: 80px;
+}
+
+.nav{
+    position: fixed;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 150px;
+    font-size: 1.1vw;
+    font-weight: 50;
+    z-index: 100;
+}
+
+.nav img{
+    height: 90px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+.nav button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #95C11E;
+    position: fixed;
+    z-index: 100;
+    transition: linear;
+}
+
+.cursor-blur{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #96c11e2b;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.721);
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.page1 h1{
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 900;
+    margin-left: 40px;
+}
+
+.grid-container{
+    height: 70%;
+    /* width: 100%; */
+    margin-top: 20px;
+    margin-left: 25px;
+    /* background-color: #95C11E; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.event{
+    text-align: start;
+    padding: 20px;
+    transition: all ease 0.5s;
+}
+
+.event h2{
+    font-size: 1.7vw;
+    margin-bottom: 20px;
+}
+
+.event p{
+    font-size: 1.2vw;
+}
+
+.event button{
+    height: 40px;
+    width: 150px;
+    background-color: #0a0273;
+    margin-top: 30px;
+    font-size: 1.2vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+#event1:hover{
+    background: linear-gradient(to left bottom, rgb(99, 3, 99), #0a0273);
+    border-radius: 20px;
+    scale: 0.9;
+}
+
+#event2:hover{
+    background: linear-gradient(to left bottom, rgb(49, 23, 100), rgb(182, 176, 12));
+    border-radius: 20px;
+    scale: 0.9;
+}
+
+#event3:hover{
+    background: linear-gradient(to left bottom, rgb(3, 2, 45), rgb(38, 80, 115));
+    border-radius: 20px;
+    scale: 0.9;
+}
+
+#event4:hover{
+    background: linear-gradient(to left bottom, rgb(117, 14, 33), rgb(227, 101, 29));
+    border-radius: 20px;
+    scale: 0.9;
+}
+
+#event5:hover{
+    background: linear-gradient(to left bottom, rgb(8, 95, 3), rgb(111, 212, 80));
+    border-radius: 20px;
+    scale: 0.9;
+}
+
+#event6:hover{
+    background: linear-gradient(to left bottom, rgb(99, 3, 99), #0a0273);
+    border-radius: 20px;
+    scale: 0.9;
+}

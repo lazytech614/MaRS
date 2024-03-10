@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background: linear-gradient(to left bottom, green, #95C11E);
+}
+
+body::-webkit-scrollbar-thumb{
+    display: block;
+    background: linear-gradient(to top, rgba(157, 186, 151, 0.247), white, #96c11e3c);
+    border-radius: 80px;
+}
+
+.nav{
+    position: fixed;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 150px;
+    font-size: 1.1vw;
+    font-weight: 50;
+    z-index: 100;
+}
+
+.nav img{
+    height: 90px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+.nav button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #95C11E;
+    position: fixed;
+    z-index: 100;
+    transition: linear;
+}
+
+.cursor-blur{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #96c11e2b;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.358);
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+.page1 h1{
+    font-size: 9vw;
+    font-weight: 900;
+    position: relative;
+}
+
+.page1 p{
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.5vw;
+}
+
+.page2, .page3, .page4, .page5, .page6{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left{
+    height: 100%;
+    width: 60%;
+    padding: 60px 20px;
+    transition: all ease 0.5s;
+}
+
+.left h1{
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.left p{
+    font-size: 1.7vw;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    margin-top: 65px;
+    transition: all ease 0.5s;
+}
+
+.right img:hover{
+    scale: 0.9;
+}
+
+.inner{
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.inner:hover{
+    background: linear-gradient(to left bottom, green, #95C11E);
+    scale: 0.9;
+}
+
